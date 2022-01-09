@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    background-color: rgb(160, 149, 143);
+    width: 1920px;
+    height: 5000px
+}
+
+main {
+    margin: 0;
+    width: 65%;
+    height: auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: rgb(253, 242, 235);
+
+}
+
+.nav-link {
+    font-family: 'Inter', sans-serif;
+    color: rgb(73, 68, 0);
+    letter-spacing: 3px
+}
+.pfloText {
+    font-family: 'Inter', sans-serif;
+    color: rgb(146, 80, 80);
+    letter-spacing: 5px;
+  }
+
+  .imgDark:hover {
+    /* 明度降低 */
+    -webkit-filter: brightness(.4);
+  }
+
+  .imgTitle {
+    position: absolute;
+    left: 150px;
+    top: 180px;
+    z-index: 1;
+    color: white;
+    display: none;
+    line-height: 50px;
+  }
+
+#psImg-1,
+#psImg-2 {
+    border-radius: 55px;
+    width: 35%;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+}
+
+#psImg-2{
+    margin-top:100px;
+    background-color: rgb(159, 189, 176);
+    margin-left:-200px;
+}
+
+.ps1text {
+    position: relative;
+    left: -250px;
+    bottom: -450px;
+    z-index: 1;
+    font-size:xx-large ;
+    line-height: 60px;
+}
+
