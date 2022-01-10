@@ -162,6 +162,17 @@ main {
     height:100%;
 }
 
+.arrow:hover{
+    animation:swing 1s 1;
+}
+
+@keyframes swing{
+    15%{transform:translateX(5px);}
+    40%{transform:translateX(-5px);}
+    65%{transform:translateX(2px);}
+    85%{transform:translateX(-2px);}
+}
+
  /* footer */
 .contactIfo{
     font-family: 'Inter', sans-serif;
