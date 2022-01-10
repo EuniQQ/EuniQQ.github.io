@@ -12,18 +12,104 @@ main {
     box-sizing: border-box;
     overflow: hidden;
     background-color: rgb(253, 242, 235);
-
 }
+
+/* nav */
 
 .nav-link {
     font-family: 'Inter', sans-serif;
     color: rgb(73, 68, 0);
-    letter-spacing: 3px
+    letter-spacing: 3px;
 }
+
+/* top img */
+.title{
+    position:relative;
+    z-index: 1;
+    right:-600px;
+    bottom:-120px;
+    animation: mymove 2s infinite;
+    animation-delay: 5s;
+}
+
+
+@keyframes mymove {
+    from {left: 1000px;}
+    to {left: 600px;}
+    
+  }
+
+/* about */
+.aboutTitle{
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 5px;
+    font-weight: bolder;
+}
+
+.introduce{
+  margin-top:300px;  
+}
+.textArea{
+    border-radius:20% ; 
+    height:500px ; 
+    width:80% ; 
+    margin-top:-200px;
+}
+
+.euniImg{
+    margin-left:80px;
+    margin-top:40px;
+  
+}
+
+.aboutImg-2{
+    
+    left:-100px;
+    top:50px;
+    width:30%;
+    animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+.aboutImg-3{
+    left:500px ; 
+    top:-300px;
+    /* animation: rotation 8s infinite linear; */
+}
+
+.aboutImg-1{
+    position:relative;
+    right:-400px;
+    top:-100px;
+    width:50%;
+    z-index:1;
+    animation: rotation 15s infinite linear;
+}
+
+/* protfolio */
 .pfloText {
     font-family: 'Inter', sans-serif;
     color: rgb(146, 80, 80);
     letter-spacing: 5px;
+  }
+
+  .pfloImg {
+    width:100%;
+    height:100%;
+  }
+
+  .imgDark {
+    width:100%;
+    height:100%;
+    background-color:rgb(241, 226, 206);
   }
 
   .imgDark:hover {
@@ -31,6 +117,7 @@ main {
     -webkit-filter: brightness(.4);
   }
 
+  /* protfolio-web */
   .imgTitle {
     position: absolute;
     left: 150px;
@@ -41,14 +128,8 @@ main {
     line-height: 50px;
   }
 
-.aboutTitle{
-    font-family: 'Inter', sans-serif;
-    letter-spacing: 5px;
 
-}
-
-
-
+  /* protfolio-ps */
 #psImg-1,
 #psImg-2 {
     border-radius: 55px;
@@ -73,7 +154,7 @@ main {
 }
 
 
-
+/* 平面設計 */
 .p3Img{
     /* border:1px solid red; */
     width:100%;
