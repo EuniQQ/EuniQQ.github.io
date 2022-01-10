@@ -10,6 +10,7 @@
     integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./login.html">
 
   <style>
 
@@ -20,6 +21,7 @@
   <main class="mx-auto">
     <div class="container-fruid">
       <!-- nav -->
+
       <div class="row">
         <div class="col-12">
           <nav class="navbar navbar-expand-lg navbar-light bg-light" style="height:80px;">
@@ -37,10 +39,55 @@
                   <a class="nav-link mx-3" href="#frotfolio">PROTFOLIO</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link mx-3" href="#contact">CONTACT</a>
+                  <a id="contect" class="nav-link mx-3" href="#contect">CONTACT</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link mx-3" href="#">LOG IN</a>
+                  <a data-toggle="modal" data-target="#login" class="nav-link mx-3" href="#">LOG IN</a>
+                  <!-- login -->
+                  <div class="container">
+
+                    <!-- The Modal -->
+                    <div class="modal fade" id="login">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+
+                          <!-- Modal Header -->
+                          <div class="modal-header">
+                            <h4 class="modal-title">Admin login</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          </div>
+
+                          <!-- Modal body -->
+                          <div class="modal-body">
+                            <div class="row">
+
+                              <div class="form-inline col-6 text-center mx-auto ">
+
+                                <!-- 帳號 -->
+                                <label for="account" class="label col-form-label">帳號：
+                                  <input type="text" class="col form-cotrol p-2" id="account" name="account"
+                                    placeholder="&nbsp;&nbsp;Enter account"></label>
+
+                                <!-- 密碼 -->
+                                <label for="password" class="label col-form-label mt-3 ">密碼：
+                                  <input type="password" class="col form-cotrol p-2" id="password" name="password"
+                                    placeholder="&nbsp;&nbsp;Enter password"></label>
+
+                              </div>
+
+                            </div>
+                          </div>
+
+                          <!-- Modal footer -->
+                          <div class="modal-footer">
+                            <button type="summit" class="btn btn-secondary" data-dismiss="modal">summit</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <!-- modal end -->
                 </li>
               </ul>
             </div>
@@ -57,7 +104,11 @@
           <!-- <img src="./image/top.png" style="width:100%"> -->
           <img src="./image/title.png" class="title">
           <!-- style="z-index:1;position:absolute;bottom:-600px;right:30px"> -->
+
           <img src="./image/bg.svg" style="z-index: 0;width:100%;position:absolute;left:0">
+          <div style="border:1px solid red; z-index:10;">
+            
+          </div>
         </div>
       </div>
     </div>
@@ -67,7 +118,7 @@
     <content class="container-fruid" id="aboutMe">
       <div class="row">
         <div class="col-lg-6 ">
-          <div  style="margin-top:200px;position:relative;">
+          <div style="margin-top:200px;position:relative;">
             <h1 class="aboutTitle" style="padding-left:80px;padding-top:120px">ABOUT</h1>
             <h1 class="aboutTitle" style="padding-left:180px;">// ME //</h1>
             <img src="./image/eunice.png" class="euniImg">
@@ -78,8 +129,9 @@
 
         <div class="introduce col-lg-6">
           <img src="./image/dec_1.png" class="aboutImg-1">
-          <div class="textArea bg-white px-5 " >
-            <h4 class="pt-5 "style="letter-spacing:5px;line-height:40px">我是筠臻，求學時在復興美工科、台中科技大學 商業設計系，學習美術工藝、平面設計等相關技能。並於基督教機構擔任美編設計。<br>
+          <div class="textArea bg-white px-5 ">
+            <h4 class="pt-5 " style="letter-spacing:5px;line-height:40px">我是筠臻，求學時在復興美工科、台中科技大學
+              商業設計系，學習美術工藝、平面設計等相關技能。並於基督教機構擔任美編設計。<br>
               2021年決定跨出舒適圈，不再侷限於平面設計，盼望擴張自己將過去所長與網頁媒體結合。泰山職訓局接受920小時的訓練，目前仍持續學習。
 
             </h4>
@@ -168,23 +220,34 @@
       </div>
     </div>
 
-    <!--p1 footer --> 
-    <footer id="contact" class="mt-5 pt-5 text-white" style="background-color:rgb(119, 69, 16)">
-      <!-- <div class="container"> -->
-  
-      <div class="text-center">
-        <h5>Lorem ipsum dolor sit.</h5>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, reprehenderit!</p>
-      </div>
-  
-  
-      <!-- copy right -->
-      <div class="mt-5 py-2 ">
-        <p class="text-center">&copy; copy right by Eunice Chang</p>
-      </div>
-      <!-- </div> -->
-    </footer>
-  </div>
+    <!--p1 footer -->
+    <div class="container-fruid">
+     
+      <footer id="contact" class="row mt-5 pt-5 text-white" style="background-color:rgb(158, 135, 70)">
+        <!-- <div class="container"> -->
+
+        <div class="contactIfo text-center col-lg-4 "> 
+          <p><i class="fas fa-envelope fa-2x"></i><br> eunice911qq@gmail.com</p>
+        </div>
+
+        <div class="contactIfo text-center col-lg-4"> 
+        <p><i class="fab fa-github fa-2x"></i><br>https://github.com/EuniQQ</p> 
+        </div>
+
+        <div class="contactIfo text-center col-lg-4"> 
+          <p><i class="fas fa-lightbulb fa-2x"></i><br>220.128.133.15/s1100421</p> 
+          </div>
+
+
+        <!-- copy right -->
+        <div class="col-12 mt-5 py-2 ">
+          
+          <p class=" text-center ">&copy; copy right by Eunice Chang</p>
+        </div>
+        <!-- </div> -->
+      </footer>
+    </div>
+    </div>
 
 
     <!-- page1 網頁設計 end-->
@@ -309,6 +372,8 @@
       </div>
       <!-- page3 end -->
       </content>
+
+
 
 
 

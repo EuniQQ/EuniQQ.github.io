@@ -40,7 +40,7 @@ main {
   }
 
 /* about */
-.aboutTitle{
+.aboutTitle {
     font-family: 'Inter', sans-serif;
     letter-spacing: 5px;
     font-weight: bolder;
@@ -62,8 +62,7 @@ main {
   
 }
 
-.aboutImg-2{
-    
+.aboutImg-2{  
     left:-100px;
     top:50px;
     width:30%;
@@ -161,4 +160,8 @@ main {
     height:100%;
 }
 
- 
+ /* footer */
+.contactIfo{
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 3px;
+}
