@@ -123,11 +123,10 @@ main {
     top: 180px;
     z-index: 1;
     color: white;
-    display: none;
     line-height: 50px;
   }
 
-
+  
   /* protfolio-ps */
 #psImg-1,
 #psImg-2 {
