@@ -133,7 +133,7 @@
             <h4 class="pt-5 " style="letter-spacing:5px;line-height:40px"><strong
                 style="color:teal;font-size:28px">我是筠臻</strong>，求學時在復興美工科、台中科技大學
               商業設計系，學習美術工藝、平面設計等相關技能。並於基督教機構擔任美編設計。<br>
-              2021年決定跨出舒適圈，不再侷限於平面設計，盼望擴張自己將過去所長與網頁媒體結合。泰山職訓局接受920小時的訓練，目前仍持續學習。
+              2021年決定跨出舒適圈，不再侷限於平面設計，盼望擴張自己將過去所長與網頁媒體結合。進入泰山職訓局接受920小時的訓練，目前仍持續學習。
 
             </h4>
           </div>
@@ -175,7 +175,7 @@
             <!-- 第一層 -->
             <div class="col-md-4 col-sm-6 p-0 ">
               <a href="http://220.128.133.15/s1100421/calendar/index.php?">
-                <h2 class="imgTitle text-center font-weight-bold mx-auto">Calendar <br>萬 年 曆</h2>
+                <h2 class="imgTitle text-center font-weight-bold mx-auto d-none">Calendar <br>萬 年 曆</h2>
                 <img src="./image/calendar.png" class="imgDark ptfloImg" style="background-color:rgb(206, 203, 176)">
               </a>
             </div>
@@ -194,7 +194,7 @@
             </div>
             <div class="col-md-4 col-sm-6 p-0 ">
               <a href="http://220.128.133.15/s1100421/polling/index.php">
-                <h2 class="imgTitle text-center font-weight-bold">Polling<br>投 票 系 統</h2>
+                <h2 class="imgTitle text-center font-weight-bold  d-none">Polling<br>投 票 系 統</h2>
                 <img src="./image/polling.png" class="imgDark ptfloImg">
               </a>
             </div>
@@ -215,7 +215,7 @@
 
         <div class="col-md-4 col-sm-6 p-0" style="background-color:rgb(255, 255, 255);">
           <a href="http://220.128.133.15/s1100421/story/index.php?page=1&language=Chinese">
-            <h2 class="imgTitle text-center font-weight-bold" style="left: 100px;">Story<br>五 頁 式 展 示 書</h2>
+            <h2 class="imgTitle text-center font-weight-bold d-none" style="left: 100px;">Story<br>五 頁 式 展 示 書</h2>
             <img src="./image/story.png" class="imgDark ptfloImg" style="background-color:rgb(201, 229, 236)">
           </a>
         </div>
@@ -285,7 +285,7 @@
 
         <!-- 第二排 -->
         <div class="col-lg-3 col-md-4 col-sm-6 mt-5 mx-auto">
-          <a data-fancybox="gallery" href="./image/4(2)_lg.png" ><img src="./image/4(2).png" class="p3Img"></a>
+          <a data-fancybox="gallery" href="./image/4-2_lg.png" ><img src="./image/4-2.png" class="p3Img"></a>
         </div>
 
         <div class="col-lg-3 col-md-4 col-sm-6 mt-5 mx-auto">
@@ -357,9 +357,7 @@
         <div class="col-lg-3 col-md-4 col-sm-6 mt-5 mx-auto">
           <a data-fancybox="gallery" href="./image/16_lg.png" ><img src="./image/16.png" class="p3Img"></a>
         </div>
-        <!-- <div class="modal-dialog modal-fullscreen-sm-down" id="psmodal">
-          <img src="{$psImages['0']}" class='p3Img' onclick="showBigImg('{$psImages['src']}')">
-        </div> -->
+        
 
       </div>
      
@@ -434,7 +432,7 @@
 
 
 
-        //志浩哥:
+        //hover標題:
         $('.imgDark').on('mouseover', function () {
           $(this).siblings('.imgTitle').removeClass('d-none');
           $(this).siblings('.imgTitle').addClass('d-1');
@@ -446,37 +444,37 @@
         })
 
 
-        const psImages = [
-          { "id": "1", "src": "./image/0.png", },
-          { "id": "2", "src": "./image/1.png", },
-          { "id": "3", "src": "./image/2.png", },
-          { "id": "4", "src": "./image/3.png", },
-          { "id": "5", "src": "./image/4.png", },
-          { "id": "6", "src": "./image/5.png", },
-          { "id": "7", "src": "./image/6.png", },
-          { "id": "8", "src": "./image/7.png", },
-          { "id": "9", "src": "./image/8.png", },
-          { "id": "10", "src": "./image/9.png", },
-          { "id": "11", "src": "./image/10.png", },
-          { "id": "12", "src": "./image/11.png", },
-          { "id": "13", "src": "./image/12.png", },
-          { "id": "14", "src": "./image/13.png", },
-          { "id": "15", "src": "./image/14.png", },
-          { "id": "16", "src": "./image/15.png", },
-          { "id": "17", "src": "./image/16.png", },
-          { "id": "18", "src": "./image/17.png", },
-          { "id": "19", "src": "./image/18.png", },
-        ]
+        // const psImages = [
+        //   { "id": "1", "src": "./image/0.png", },
+        //   { "id": "2", "src": "./image/1.png", },
+        //   { "id": "3", "src": "./image/2.png", },
+        //   { "id": "4", "src": "./image/3.png", },
+        //   { "id": "5", "src": "./image/4.png", },
+        //   { "id": "6", "src": "./image/5.png", },
+        //   { "id": "7", "src": "./image/6.png", },
+        //   { "id": "8", "src": "./image/7.png", },
+        //   { "id": "9", "src": "./image/8.png", },
+        //   { "id": "10", "src": "./image/9.png", },
+        //   { "id": "11", "src": "./image/10.png", },
+        //   { "id": "12", "src": "./image/11.png", },
+        //   { "id": "13", "src": "./image/12.png", },
+        //   { "id": "14", "src": "./image/13.png", },
+        //   { "id": "15", "src": "./image/14.png", },
+        //   { "id": "16", "src": "./image/15.png", },
+        //   { "id": "17", "src": "./image/16.png", },
+        //   { "id": "18", "src": "./image/17.png", },
+        //   { "id": "19", "src": "./image/18.png", },
+        // ]
 
-        for (let i = 0; i < 18; i++) {
-          < div class="col-lg-3 col-md-4 col-sm-6 mt-5 mx-auto" >
-            <img src="${psImages[i]['src']" class="p3Img">
-          </div>
-
-
+        // for (let i = 0; i < 18; i++) {
+        //   < div class="col-lg-3 col-md-4 col-sm-6 mt-5 mx-auto" >
+        //     <img src="${psImages[i]['src']" class="p3Img">
+        //   </div>
 
 
-        }
+
+
+      
 
       });
 
