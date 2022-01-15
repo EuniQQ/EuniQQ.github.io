@@ -56,9 +56,8 @@ main {
 }
 
 .euniImg {
-  margin-left: 80px;
-  margin-top: 40px;
-
+  margin-left: 25%;
+  width:50%;
 }
 
 .aboutImg-2 {
@@ -100,9 +99,9 @@ main {
 }
 
 .aboutImg-1 {
-  position: relative;
-  right: -400px;
-  top: -100px;
+  position: absolute;
+  right: -200px;
+  top: 170px;
   width: 50%;
   z-index: 1;
   animation: rotation 15s infinite linear;
