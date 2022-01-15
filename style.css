@@ -155,8 +155,10 @@ main {
 #psImg-2 {
   border-radius: 55px;
   width: 35%;
-  height: 550px;
+  /* height: 550px; */
+  height: 140%;
   background-color: rgb(214, 231, 255);
+  overflow: hidden;
 }
 
 #psImg-2 {
@@ -167,12 +169,7 @@ main {
 
 .ps1text {
   position: relative;
-  left: -50px;
-  bottom: 10px;
-  z-index: 1;
-  font-size: xx-large;
-  line-height: 50px;
-  letter-spacing: 8px;
+  right: 100px;
   text-align: end;
 }
 

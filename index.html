@@ -74,7 +74,7 @@
 
     <!-- about-->
     <!-- 左半邊 -->
-    <content class="container-fruid" id="aboutMe">
+    <content class="container" id="aboutMe">
       <div class="row">
         <div class="col-lg-6 col-md-12 col-sm-12">
           <div style="margin-top:150px;position:relative;">
@@ -92,7 +92,8 @@
             <h4 class="py-5   " style="letter-spacing:5px;line-height:40px;z-index:2; ">
               <strong style="color:teal;font-size:28px">我是筠臻</strong>，求學時於復興美工科、台中科技大學
               商業設計系，學習美術工藝、平面設計等相關技能。並於基督教機構擔任美編設計。<br>
-               <strong style="color:teal;font-size:28px">2021年</strong>決定跨出舒適圈，盼望所長與網頁媒體結合，因而進入泰山職訓局，接受920小時php資料庫網頁設計課程訓練，目前仍持續學習中。
+              <strong
+                style="color:teal;font-size:28px">2021年</strong>決定跨出舒適圈，盼望所長與網頁媒體結合，因而進入泰山職訓局，接受920小時php資料庫網頁設計課程訓練，目前仍持續學習中。
             </h4>
             <img src="./image/dec_1.png" class="aboutImg-1" style="z-index:1;">
           </div>
@@ -192,23 +193,25 @@
     <div id="page2" class="container-fruid tab-pane fabe py-5" style="background-color: rgb(252, 251, 251);"><br>
       <div class="row" style="justify-content:space-evenly;">
 
-        <div id="psImg-1" class="col-lg-3 col-md-6 col-sm-12 p-0 ">
+        <!-- 旅遊DM -->
+        <div id="psImg-1" class="col-lg-3 col-md-3 col-sm-3 p-0 ">
           <a href="http://220.128.133.15/s1100421/travel_DM.jpg">
-            <img src="./image/travelDM.png" style="width:100%;border-radius: 55px  55px 0 0 ;">
+            <img src="./image/travelDM.png" style="width:100%;">
+            <!-- <h4 class="ps1text mt-2 p-5">TRAVEL <br>DM </h4> -->
+            <h4 class="ps1text text-white mt-3">T R A V E L <br> D M </h4>
           </a>
-          <h3 class="ps1text mt-2 p-5">TRAVEL <br>DM </h3>
         </div>
 
-
-        <!-- <h1>2022</h1> -->
-        <div id="psImg-2" class=" col-lg-3 col-md-6 col-sm-12 p-0 md-5" style="overflow: hidden;">
+        <!-- 2022年曆 -->
+        <div id="psImg-2" class=" col-lg-3 col-md-3 col-sm-3 p-0">
           <a href="http://220.128.133.15/s1100421/2022_calendar.jpg">
             <img src="./image/2022calendar.png" style="width:100%;margin-bottom:0px;">
             <h4 class="text-white mt-3 mx-5 ">2 0 2 2 <br> C A L E N D A R</h4>
           </a>
         </div>
 
-        <div id="psImg-3" class="col-lg-3 col-md-6 col-sm-12">
+        <!-- p2文字說明 -->
+        <div id="psImg-3" class="col-lg-3 col-md-4 col-sm-8">
           <i class="fas fa-quote-right fa-5x" mb-2></i>
           <h4 style="letter-spacing: 8px;line-height: 40px;">PHOTOSHOP <br>ILLUSTRATOR <br><br>在職訓局受訓期間，除了網頁技術相關課程學習
             ，也得以在ADOBE軟體的應用上學習精進<br><i class="fas fa-palette fa-3x float-right"></i></h4>
@@ -393,7 +396,7 @@
           $(this).siblings('.imgTitle').removeClass('d-1');
         })
 
-        
+
 
         // const psImages = [
         //   { "id": "1", "src": "./image/0.png", },
