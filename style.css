@@ -154,11 +154,16 @@ main {
 #psImg-2 {
   border-radius: 55px;
   width: 35%;
-  /* height: 550px; */
   height: 140%;
   background-color: rgb(214, 231, 255);
   overflow: hidden;
 }
+
+#psImg-1:hover,
+#psImg-2:hover {
+  transform:scale(1.1);
+}
+
 
 #psImg-2 {
   margin-top: 100px;
@@ -202,6 +207,19 @@ main {
   }
 }
 
+/* top button */
+/* 左右搖擺 */
+@keyframes swing {
+  15%{transform: translateX(5px);}
+  40%{transform: translateX(-5px);}
+  65%{transform: translateX(2px);}
+  85%{transform: translateX(-2px);}
+  100%{transform: translateX(0px);}
+}
+
+#top:hover{
+  animation:swing 1s 1;
+}
 /* footer */
 .contactIfo {
   font-family: 'Inter', sans-serif;
