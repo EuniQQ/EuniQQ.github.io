@@ -161,7 +161,9 @@ main {
 
 #psImg-1:hover,
 #psImg-2:hover {
+   /* 縮放 */
   transform:scale(1.1);
+  box-shadow: 10px 10px 10px rgb(131, 131, 131);
 }
 
 
